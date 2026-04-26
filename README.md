@@ -201,32 +201,35 @@ Para saber qué camino seguir, el router utiliza una tabla de enrutamiento:
 
 ## **Capitulo 14**
 
-**1. Diferencias entre TCP y UDP**
+**1. Diferencias entre TCP y UDP**<br>
 El texto describe cómo estos dos protocolos gestionan la entrega de datos de maneras opuestas:
 
-**UDP (User Datagram Protocol):**
-***Filosofía:*** Entrega de "mejor esfuerzo" (best-effort).
-***Funcionamiento:*** No requiere confirmación de recepción ni retransmite datos perdidos.
+**UDP (User Datagram Protocol):**<br>
+***Filosofía:*** Entrega de "mejor esfuerzo" (best-effort).<br>
+***Funcionamiento:*** No requiere confirmación de recepción ni retransmite datos perdidos.<br>
 ***Uso ideal:*** Aplicaciones en tiempo real como VoIP y streaming de audio/video, donde la velocidad es crítica y una pequeña pérdida de paquetes no es perceptible.
 
-**TCP (Transmission Control Protocol):**
-***Filosofía:*** Entrega confiable y garantizada.
-***Funcionamiento:*** Divide el mensaje en segmentos numerados. Realiza un seguimiento de cada uno; si un segmento no se confirma en un tiempo determinado, el emisor lo retransmite de forma individual.
+**TCP (Transmission Control Protocol):**<br>
+***Filosofía:*** Entrega confiable y garantizada.<br>
+***Funcionamiento:*** Divide el mensaje en segmentos numerados. Realiza un seguimiento de cada uno; si un segmento no se confirma en un tiempo determinado, el emisor lo retransmite de forma individual.<br>
 ***Uso ideal:*** Aplicaciones donde la integridad de los datos es vital (como descarga de archivos o correos).
 
-**2. Números de Puerto**
+**2. Números de Puerto**<br>
 Los puertos sirven para identificar servicios específicos y mantener conversaciones simultáneas entre hosts.
-Categorías de Puertos (Administrados por la ICANN):
-***1 a 1023*** -->Conocidos -->Para servicios comunes (ej. HTTP en puerto 80, FTP en puerto 21).
-***1024 a 49151*** -->Registrados -->Usados por organizaciones para aplicaciones específicas (ej. mensajería instantánea).
+
+Categorías de Puertos (Administrados por la ICANN):<br>
+***1 a 1023*** -->Conocidos -->Para servicios comunes (ej. HTTP en puerto 80, FTP en puerto 21).<br>
+***1024 a 49151*** -->Registrados -->Usados por organizaciones para aplicaciones específicas (ej. mensajería instantánea).<br>
 ***49152 a 65535*** -->Privados --->Puertos dinámicos o efímeros, usados generalmente como puertos de origen.
 
-*Dinámica de Comunicación:*
-***Puerto de Destino:*** El cliente lo coloca en el segmento para indicar qué servicio solicita del servidor.
+*Dinámica de Comunicación:*<br>
+***Puerto de Destino:*** El cliente lo coloca en el segmento para indicar qué servicio solicita del servidor.<br>
 ***Puerto de Origen:*** Se genera de forma dinámica en el dispositivo emisor. Esto permite que un mismo host mantenga múltiples conversaciones HTTP o de otro tipo al mismo tiempo, diferenciándolas por su puerto de origen.
 
-**3. Seguridad y Monitoreo**
+**3. Seguridad y Monitoreo**<br>
 El texto destaca que las conexiones TCP no identificadas pueden ser un riesgo de seguridad. Para gestionar esto, se menciona la herramienta Netstat:
 
-Permite verificar conexiones activas.
-Muestra el protocolo en uso, direcciones locales/remotas, números de puerto y el estado actual de la conexión.
+Permite verificar conexiones activas.<br>
+Muestra el protocolo en uso, direcciones locales/remotas, números de puerto y el estado actual de la conexión.<br>
+<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/6f5b3067-71a1-489c-8c6f-2bfac131ef3c" />
+
