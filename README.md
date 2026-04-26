@@ -64,3 +64,12 @@ El switch gestiona la red mediante una tabla de direcciones MAC que construye di
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/58ac8fcc-394a-49ca-8a7a-c81f1394511b" />
 
 ## **Capitulo 8**
+
+**Propósito de la Dirección IPv4**
+Identificación Lógica: Una dirección IPv4 es una dirección de red lógica que identifica de forma única a un host específico.
+
+***Comunicación Local y Remota:*** Para permitir la comunicación, la dirección debe ser única tanto dentro de una red LAN local como a nivel mundial para conexiones remotas.
+
+***Asignación de Interfaz:*** Se asigna a la conexión de la interfaz de red (NIC) de un dispositivo.
+
+***Enrutamiento de Paquetes:*** Cada paquete enviado por Internet contiene una dirección de origen y una de destino, permitiendo que los dispositivos de red aseguren que la información llegue y las respuestas vuelvan al origen.
