@@ -301,3 +301,27 @@ Todos estos servicios (DNS, SSH, HTTP, etc.) dependen de la suite de protocolos 
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/0c037848-f306-43e1-af9a-99c4902c9146" />
 
 ## **Capitulo 17**
+
+**1. Comandos Esenciales de Diagnóstico***<br>
+El texto destaca cinco herramientas básicas que todo administrador debe conocer:
+
+🟢***ipconfig:*** Proporciona la configuración IP actual (dirección, máscara y gateway).<br>
+🟢***ping:*** Verifica la conectividad con otro host mediante paquetes de "solicitud de eco".<br>
+🟢***netstat:*** Muestra todas las conexiones de red activas en el equipo.<br>
+🟢***tracert:*** Rastrea la ruta exacta que sigue un paquete hasta llegar a su destino.<br>
+🟢***nslookup:*** Consulta directamente a los servidores DNS para obtener información de dominios.
+
+**2. Profundizando en ipconfig**<br>
+El comando es más versátil de lo que parece gracias a sus modificadores:
+
+🟢***ipconfig /all:*** Es el más detallado. Muestra la dirección física (MAC), servidores DNS, estado del DHCP y el tiempo de arrendamiento de la IP.<br>
+🟢***ipconfig /release:*** Libera la dirección IP actual asignada por el servidor DHCP.<br>
+🟢***ipconfig /renew:*** Solicita una nueva configuración al servidor DHCP, útil cuando la conexión es inestable o la IP está desactualizada.
+
+**3. La Importancia del ping**<br>
+Se describe como la utilidad más utilizada. Su funcionamiento es sencillo pero vital:
+
+Envía una solicitud de eco a una IP específica.<br>
+Si el destino es accesible, responde con un paquete de respuesta de eco.<br>
+Si se recibe la respuesta, se confirma que hay conectividad física y lógica entre ambos puntos.<br>
+<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/0d138ed6-a438-4e00-bdd4-db03e3da601a" />
