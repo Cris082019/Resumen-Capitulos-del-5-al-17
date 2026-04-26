@@ -55,13 +55,12 @@ El costo de la instalación.
 
 ## **Capitulo 7**
 
-***1. Encapsulación de Datos***
+***1. Encapsulación de Datos***<br>
 Es el proceso de envolver un mensaje en un formato específico (como una carta en un sobre) para su transporte. La trama de Ethernet incluye las direcciones MAC (origen/destino), códigos de sincronización y un sistema de verificación para detectar errores de transmisión.
 
-***2. Evolución de la Capa de Acceso***
-**Hubs (Concentradores):** Dispositivos obsoletos que permiten solo una comunicación a la vez; generan colisiones y lentitud.
-
+***2. Evolución de la Capa de Acceso***<br>
+**Hubs (Concentradores):** Dispositivos obsoletos que permiten solo una comunicación a la vez; generan colisiones y lentitud.<br>
 **Switches (Conmutadores):** Dispositivos modernos de Capa 2 que permiten comunicaciones simultáneas, eliminando las colisiones y mejorando el rendimiento.
 
-***3. Inteligencia del Switch***
+***3. Inteligencia del Switch***<br>
 El switch gestiona la red mediante una tabla de direcciones MAC que construye dinámicamente. Al recibir una trama, "aprende" la ubicación del emisor y busca al destinatario para establecer una conexión directa y temporal entre sus puertos.
