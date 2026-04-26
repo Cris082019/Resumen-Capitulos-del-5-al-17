@@ -97,4 +97,7 @@ Como IPv4 e IPv6 deben convivir, se usan tres técnicas:
 Las direcciones IPv6 son largas (8 grupos de 4 dígitos hexadecimales), pero se pueden acortar con dos reglas:
 
 ***Omitir ceros a la izquierda:*** 01ab → 1ab.<br>
-***Doble dos puntos (::):*** Reemplaza una secuencia de grupos de ceros. Ojo: Solo se puede usar una vez por dirección.
+***Doble dos puntos (::):*** Reemplaza una secuencia de grupos de ceros. Ojo: Solo se puede usar una vez por dirección.<br>
+<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/96d99411-a0aa-48e1-8979-971a3291aba0" />
+
+
