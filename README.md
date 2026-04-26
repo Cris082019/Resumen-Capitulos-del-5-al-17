@@ -86,36 +86,37 @@ Identificación Lógica: Una dirección IPv4 es una dirección de red lógica qu
 **1. Tipos de Transmisión en IPv4**<br>
 Existen tres formas principales en las que los datos viajan por la red:
 
-***Unidifusión (Unicast):*** Comunicación uno a uno. El paquete va desde un único origen a un único destino (rango: 1.1.1.1 a 223.255.255.255).<br>
-***Difusión (Broadcast):*** Comunicación uno a todos. Se envía un mensaje a todos los dispositivos de una red local.<br>
-***Difusión limitada:*** Usa la dirección 255.255.255.255.<br>
+🟢***Unidifusión (Unicast):*** Comunicación uno a uno. El paquete va desde un único origen a un único destino (rango: 1.1.1.1 a 223.255.255.255).<br>
+🟢***Difusión (Broadcast):*** Comunicación uno a todos. Se envía un mensaje a todos los dispositivos de una red local.<br>
+🟢***Difusión limitada:*** Usa la dirección 255.255.255.255.<br>
 **Nota importante:** Los routers, por defecto, no reenvían estos paquetes.<br>
-***Multidifusión (Multicast):*** Comunicación uno a un grupo seleccionado. Reduce el tráfico al enviar un solo paquete a múltiples suscriptores (rango: 224.0.0.0 a 239.255.255.255).
+🟢***Multidifusión (Multicast):*** Comunicación uno a un grupo seleccionado. Reduce el tráfico al enviar un solo paquete a múltiples suscriptores (rango: 224.0.0.0 a 239.255.255.255).
 
 **2. Clasificación de Direcciones IPv4**<br>
 Las direcciones se dividen según su uso y su jerarquía histórica:<br>
-***Públicas vs. Privadas:*** Las direcciones públicas son únicas y enrutables en Internet. Las privadas se usan en redes internas (intranets) y requieren NAT para salir a Internet.
+🟢***Públicas vs. Privadas:*** Las direcciones públicas son únicas y enrutables en Internet. Las privadas se usan en redes internas (intranets) y requieren NAT para salir a Internet.
 
-*Direcciones Especiales:* <br>
-***Loopback (127.0.0.0/8):*** Usadas por un host para dirigirse a sí mismo.<br>
-***Link-local (APIPA - 169.254.0.0/16):*** Asignadas automáticamente cuando no hay un servidor DHCP disponible.
+➖*Direcciones Especiales:* <br>
+🟢***Loopback (127.0.0.0/8):*** Usadas por un host para dirigirse a sí mismo.<br>
+🟢***Link-local (APIPA - 169.254.0.0/16):*** Asignadas automáticamente cuando no hay un servidor DHCP disponible.
 
-*Direccionamiento con Clase (RFC 790):* <br>
-***Clase A:*** Redes muy grandes (0.0.0.0 a 127.0.0.0).<br>
-***Clase B:*** Redes medianas (128.0.0.0 a 191.255.0.0).<br>
-***Clase C:*** Redes pequeñas de hasta 254 hosts (192.0.0.0 a 223.255.255.0).
+➖*Direccionamiento con Clase (RFC 790):* <br>
+🟢***Clase A:*** Redes muy grandes (0.0.0.0 a 127.0.0.0).<br>
+🟢***Clase B:*** Redes medianas (128.0.0.0 a 191.255.0.0).<br>
+🟢***Clase C:*** Redes pequeñas de hasta 254 hosts (192.0.0.0 a 223.255.255.0).
 
 **3. Segmentación y Dominios de Difusión**<br>
 El manejo del tráfico es crucial para el rendimiento de la red:
 
-***El Problema:*** Un dominio de difusión demasiado grande genera tráfico excesivo (broadcast), lo que afecta negativamente el rendimiento de todos los dispositivos conectados.<br>
-***La Solución (Subredes):*** Dividir una red grande en espacios más pequeños llamados subredes.
+🟢***El Problema:*** Un dominio de difusión demasiado grande genera tráfico excesivo (broadcast), lo que afecta negativamente el rendimiento de todos los dispositivos conectados.<br>
+🟢***La Solución (Subredes):*** Dividir una red grande en espacios más pequeños llamados subredes.
 
-*Beneficios de segmentar:* <br>
+➖*Beneficios de segmentar:* <br>
 Reduce el tráfico innecesario.<br>
 Mejora el rendimiento general.<br>
 Permite aplicar políticas de seguridad específicas por grupo.<br>
 Facilita la ubicación de servicios (como DHCP o ARP) de forma más eficiente.<br>
+<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/c2fadc14-9349-4a19-9a7f-5d08fe0d5f7a" />
 
 
 ## **Capitulo 10**
