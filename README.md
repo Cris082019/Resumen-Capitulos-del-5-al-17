@@ -47,8 +47,7 @@ Para seleccionar el medio adecuado, se deben considerar cuatro factores:
 La distancia máxima que puede alcanzar la señal.<br>
 El entorno de instalación.<br>
 La cantidad y velocidad de los datos.<br>
-El costo de la instalación.
-
+El costo de la instalación.<br>
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/48886704-1ba0-45f6-9cf0-6f7e4129bb5d" />
 
 
