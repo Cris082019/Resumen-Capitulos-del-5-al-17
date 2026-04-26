@@ -18,6 +18,7 @@ Para que dispositivos de distintos fabricantes puedan coexistir en una misma red
 
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/899b1c0f-5496-4ef5-a2ec-42a6909463e8" />
 
+
 3. Modelos de Referencia y Capas
 La comunicación se organiza en "pilas de protocolos" divididas en capas independientes, donde cada nivel presta servicios al superior. Existen dos modelos principales:
 
