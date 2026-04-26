@@ -122,4 +122,21 @@ Las direcciones IPv6 son largas (8 grupos de 4 dígitos hexadecimales), pero se 
 ***Configuración Predeterminada:*** La mayoría de estos routers traen el servicio habilitado de fábrica, comúnmente usando la dirección 192.168.0.1 con una máscara 255.255.255.0, la cual sirve como puerta de enlace para toda la red local.<br>
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/72c3685b-c045-47f7-b7a1-6af255cc0ea4" />
 
+## **Capitulo 11**
+
+**1. El Router como Límite de la Red**<br>
+El enrutador (router) inalámbrico actúa como la frontera física y lógica entre la red local interna y la red de Internet externa.
+Puerta de Enlace (Default Gateway): Es la dirección IPv4 de la interfaz del router conectada a la red local. Todos los hosts deben conocerla para enviar datos fuera de su propia red.
+
+➖**Doble rol del Router:**<br>
+  🟢***Servidor DHCP:*** Asigna direcciones IP automáticamente a los dispositivos internos (laptops, celulares, etc.).<br>
+  🟢***Cliente DHCP:*** Solicita una dirección IP pública al Proveedor de Servicios de Internet (ISP) para poder navegar.
+
+**2. Funcionamiento de NAT (Traducción de Direcciones de Red)**<br>
+Dado que los dispositivos internos usan direcciones privadas (no válidas en Internet), el router realiza un proceso de traducción para permitir la comunicación global.
+
+🟢***Traducción de Origen:*** Cuando un paquete sale hacia Internet, el router reemplaza la IP privada del host por su propia IP pública.<br>
+🟢***Traducción Inversa:*** Cuando llega una respuesta desde Internet, el router traduce la IP pública de vuelta a la IP privada del host correspondiente.<br>
+🟢***Eficiencia:*** La tecnología NAT permite que múltiples dispositivos internos compartan una única dirección IP pública simultáneamente.<br>
+<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/ac2f8bbf-7f7c-4be8-908c-894d1b23b89e" />
 
