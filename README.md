@@ -83,6 +83,43 @@ Identificación Lógica: Una dirección IPv4 es una dirección de red lógica qu
 
 ## **Capitulo 9**
 
+**1. Tipos de Transmisión en IPv4**<br>
+Existen tres formas principales en las que los datos viajan por la red:
+
+***Unidifusión (Unicast):*** Comunicación uno a uno. El paquete va desde un único origen a un único destino (rango: 1.1.1.1 a 223.255.255.255).<br>
+***Difusión (Broadcast):*** Comunicación uno a todos. Se envía un mensaje a todos los dispositivos de una red local.<br>
+***Difusión limitada:*** Usa la dirección 255.255.255.255.<br>
+**Nota importante:** Los routers, por defecto, no reenvían estos paquetes.<br>
+***Multidifusión (Multicast):*** Comunicación uno a un grupo seleccionado. Reduce el tráfico al enviar un solo paquete a múltiples suscriptores (rango: 224.0.0.0 a 239.255.255.255).
+
+**2. Clasificación de Direcciones IPv4**<br>
+Las direcciones se dividen según su uso y su jerarquía histórica:<br>
+***Públicas vs. Privadas:*** Las direcciones públicas son únicas y enrutables en Internet. Las privadas se usan en redes internas (intranets) y requieren NAT para salir a Internet.
+
+*Direcciones Especiales:* <br>
+***Loopback (127.0.0.0/8):*** Usadas por un host para dirigirse a sí mismo.<br>
+***Link-local (APIPA - 169.254.0.0/16):*** Asignadas automáticamente cuando no hay un servidor DHCP disponible.
+
+*Direccionamiento con Clase (RFC 790):* <br>
+***Clase A:*** Redes muy grandes (0.0.0.0 a 127.0.0.0).<br>
+***Clase B:*** Redes medianas (128.0.0.0 a 191.255.0.0).<br>
+***Clase C:*** Redes pequeñas de hasta 254 hosts (192.0.0.0 a 223.255.255.0).
+
+**3. Segmentación y Dominios de Difusión**<br>
+El manejo del tráfico es crucial para el rendimiento de la red:
+
+***El Problema:*** Un dominio de difusión demasiado grande genera tráfico excesivo (broadcast), lo que afecta negativamente el rendimiento de todos los dispositivos conectados.<br>
+***La Solución (Subredes):*** Dividir una red grande en espacios más pequeños llamados subredes.
+
+*Beneficios de segmentar:* <br>
+Reduce el tráfico innecesario.<br>
+Mejora el rendimiento general.<br>
+Permite aplicar políticas de seguridad específicas por grupo.<br>
+Facilita la ubicación de servicios (como DHCP o ARP) de forma más eficiente.<br>
+
+
+## **Capitulo 10**
+
 **1. Problemas con IPv4 y la Migración a IPv6**<br>
 IPv4 se quedó sin direcciones. IPv6 soluciona esto con 128 bits, permitiendo un espacio casi infinito (340 sextillones) y mejorando la autoconfiguración y seguridad (ICMPv6).
 
@@ -100,7 +137,7 @@ Las direcciones IPv6 son largas (8 grupos de 4 dígitos hexadecimales), pero se 
 🔵***Doble dos puntos (::):*** Reemplaza una secuencia de grupos de ceros. Ojo: Solo se puede usar una vez por dirección.<br>
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/96d99411-a0aa-48e1-8979-971a3291aba0" />
 
-## **Capitulo 10**
+## **Capitulo 11**
 
 **1. Direccionamiento Estático vs. Dinámico**<br>
 ***Asignación Estática:*** El administrador de red configura manualmente la dirección IPv4, la máscara de subred y la puerta de enlace en cada dispositivo. Aunque ofrece un control total sobre los recursos, es un proceso lento en redes grandes y requiere llevar un registro riguroso para evitar duplicados.
@@ -122,7 +159,7 @@ Las direcciones IPv6 son largas (8 grupos de 4 dígitos hexadecimales), pero se 
 ***Configuración Predeterminada:*** La mayoría de estos routers traen el servicio habilitado de fábrica, comúnmente usando la dirección 192.168.0.1 con una máscara 255.255.255.0, la cual sirve como puerta de enlace para toda la red local.<br>
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/72c3685b-c045-47f7-b7a1-6af255cc0ea4" />
 
-## **Capitulo 11**
+## **Capitulo 12**
 
 **1. El Router como Límite de la Red**<br>
 El enrutador (router) inalámbrico actúa como la frontera física y lógica entre la red local interna y la red de Internet externa.
@@ -140,7 +177,7 @@ Dado que los dispositivos internos usan direcciones privadas (no válidas en Int
 🟢***Eficiencia:*** La tecnología NAT permite que múltiples dispositivos internos compartan una única dirección IP pública simultáneamente.<br>
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/ac2f8bbf-7f7c-4be8-908c-894d1b23b89e" />
 
-## **Capitulo 12**
+## **Capitulo 13**
 
 **1. Direcciones MAC e IP**<br>
 Un dispositivo en una red local Ethernet utiliza dos direcciones principales para comunicarse:
@@ -169,7 +206,7 @@ Cuando un host conoce la IP de destino pero no su dirección MAC, utiliza el pro
 🟢***Almacenamiento:*** El emisor guarda la relación entre esa IP y esa MAC en una tabla ARP para futuras comunicaciones.<br>
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/d72ee2c4-2b1d-413e-99ea-0070c0dc5c35" />
 
-## **Capitulo 13**
+## **Capitulo 14**
 
 **1. La Necesidad del Enrutamiento**<br>
 A medida que las redes crecen, es fundamental dividirlas para mejorar el rendimiento y la administración. Los criterios principales para segmentar redes son:
@@ -199,7 +236,7 @@ Para saber qué camino seguir, el router utiliza una tabla de enrutamiento:
 🔴***Gateway (Puerta de enlace):*** Es la dirección IP de la interfaz del router conectada a la red local. Es el punto de salida obligatorio para cualquier mensaje que vaya dirigido a una red externa.<br>
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/05b98fe1-43be-4f83-826a-5214619b1541" />
 
-## **Capitulo 14**
+## **Capitulo 15**
 
 **1. Diferencias entre TCP y UDP**<br>
 El texto describe cómo estos dos protocolos gestionan la entrega de datos de maneras opuestas:
@@ -233,7 +270,7 @@ Permite verificar conexiones activas.<br>
 Muestra el protocolo en uso, direcciones locales/remotas, números de puerto y el estado actual de la conexión.<br>
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/6f5b3067-71a1-489c-8c6f-2bfac131ef3c" />
 
-## **Capitulo 15**
+## **Capitulo 16**
 
 **1. Modelo Cliente-Servidor y URIs**<br>
 El sistema se basa en un cliente (como un navegador) que solicita un servicio y un servidor que responde ejecutando una función o entregando datos. Para localizar recursos, se utilizan los URI (Identificadores de Recursos Uniformes), que se dividen en:
@@ -260,3 +297,6 @@ Se utilizan tres protocolos principales para gestionar el e-mail:
 
 **5. Suite TCP/IP**<br>
 Todos estos servicios (DNS, SSH, HTTP, etc.) dependen de la suite de protocolos TCP/IP para garantizar una transmisión confiable de la información a través de la red.<br>
+<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/0c037848-f306-43e1-af9a-99c4902c9146" />
+
+## **Capitulo 17**
