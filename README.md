@@ -65,22 +65,20 @@ El switch gestiona la red mediante una tabla de direcciones MAC que construye di
 
 ## **Capitulo 8**
 
-**Propósito de la Dirección IPv4**<br>
+**1. Propósito de la Dirección IPv4**<br>
 Identificación Lógica: Una dirección IPv4 es una dirección de red lógica que identifica de forma única a un host específico.
 
-***Comunicación Local y Remota:*** Para permitir la comunicación, la dirección debe ser única tanto dentro de una red LAN local como a nivel mundial para conexiones remotas.
+🔵***Comunicación Local y Remota:*** Para permitir la comunicación, la dirección debe ser única tanto dentro de una red LAN local como a nivel mundial para conexiones remotas.<br>
+🔵***Asignación de Interfaz:*** Se asigna a la conexión de la interfaz de red (NIC) de un dispositivo.<br>
+🔵***Enrutamiento de Paquetes:*** Cada paquete enviado por Internet contiene una dirección de origen y una de destino, permitiendo que los dispositivos de red aseguren que la información llegue y las respuestas vuelvan al origen.
 
-***Asignación de Interfaz:*** Se asigna a la conexión de la interfaz de red (NIC) de un dispositivo.
+**2. Estructura de la Dirección IPv4**<br>
+🔵***Composición de 32 bits:*** Tiene una estructura jerárquica de 32 bits dividida en dos partes fundamentales: la porción de red y la porción de host.<br>
+🔵***Direccionamiento Jerárquico:*** Esta estructura permite que los enrutadores solo necesiten conocer cómo llegar a cada red en lugar de rastrear cada host individualmente.<br>
+🔵***Máscara de Subred:*** Se utiliza para identificar qué octetos corresponden a la red y cuáles al host. Por ejemplo, en la dirección 192.168.5.11 con máscara 255.255.255.0:<br>
+192.168.5 identifica la red.<br>
+.11 identifica al host específico.<br>
+🔵***Redes Lógicas:*** El direccionamiento IPv4 permite la existencia de múltiples redes lógicas dentro de una misma infraestructura física, siempre que las porciones de red sean diferentes.
 
-***Enrutamiento de Paquetes:*** Cada paquete enviado por Internet contiene una dirección de origen y una de destino, permitiendo que los dispositivos de red aseguren que la información llegue y las respuestas vuelvan al origen.
+<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/c30bda84-7a78-4fad-8235-1d1ae3297ed2" />
 
-**Estructura de la Dirección IPv4**<br>
-***Composición de 32 bits:*** Tiene una estructura jerárquica de 32 bits dividida en dos partes fundamentales: la porción de red y la porción de host.
-
-***Direccionamiento Jerárquico:*** Esta estructura permite que los enrutadores solo necesiten conocer cómo llegar a cada red en lugar de rastrear cada host individualmente.
-
-***Máscara de Subred:*** Se utiliza para identificar qué octetos corresponden a la red y cuáles al host. Por ejemplo, en la dirección 192.168.5.11 con máscara 255.255.255.0:
-192.168.5 identifica la red.
-.11 identifica al host específico.
-
-***Redes Lógicas:*** El direccionamiento IPv4 permite la existencia de múltiples redes lógicas dentro de una misma infraestructura física, siempre que las porciones de red sean diferentes.
