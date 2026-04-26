@@ -63,4 +63,7 @@ Es el proceso de envolver un mensaje en un formato específico (como una carta e
 **Switches (Conmutadores):** Dispositivos modernos de Capa 2 que permiten comunicaciones simultáneas, eliminando las colisiones y mejorando el rendimiento.
 
 ***3. Inteligencia del Switch***<br>
-El switch gestiona la red mediante una tabla de direcciones MAC que construye dinámicamente. Al recibir una trama, "aprende" la ubicación del emisor y busca al destinatario para establecer una conexión directa y temporal entre sus puertos.
+El switch gestiona la red mediante una tabla de direcciones MAC que construye dinámicamente. Al recibir una trama, "aprende" la ubicación del emisor y busca al destinatario para establecer una conexión directa y temporal entre sus puertos.<br>
+<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/58ac8fcc-394a-49ca-8a7a-c81f1394511b" />
+
+## **Capitulo 8**
