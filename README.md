@@ -169,3 +169,33 @@ Cuando un host conoce la IP de destino pero no su dirección MAC, utiliza el pro
 🟢***Almacenamiento:*** El emisor guarda la relación entre esa IP y esa MAC en una tabla ARP para futuras comunicaciones.<br>
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/d72ee2c4-2b1d-413e-99ea-0070c0dc5c35" />
 
+## **Capitulo 13**
+
+**1. La Necesidad del Enrutamiento**<br>
+A medida que las redes crecen, es fundamental dividirlas para mejorar el rendimiento y la administración. Los criterios principales para segmentar redes son:
+
+🔴***Contención de difusión:*** Evitar que el tráfico de "broadcast" sature toda la red, limitándolo a secciones locales.<br>
+🔴***Seguridad:*** Separar grupos de computadoras con información sensible.<br>
+🔴***Ubicaciones físicas:*** Interconectar sedes que están geográficamente distantes.<br>
+🔴***Agrupación lógica:*** Organizar a los usuarios por departamentos (ej. Contabilidad, Ventas) con necesidades comunes.
+
+**2. El Rol del Enrutador (Router)**<br>
+El enrutador es el dispositivo central de la Capa 3 (Capa de Red). Sus funciones principales incluyen:
+
+🔴***Conexión de redes:*** Une diferentes redes IP independientes.<br>
+🔴***Toma de decisiones:*** A diferencia de los switches (que usan direcciones MAC de Capa 2), los routers deciden hacia dónde enviar los datos basándose en las direcciones IP de destino.<br>
+🔴***Intervención necesaria:*** Siempre que el host de origen y el de destino están en redes diferentes, es obligatorio el uso de un enrutador.
+
+**3. Funcionamiento de la Tabla de Enrutamiento**<br>
+Para saber qué camino seguir, el router utiliza una tabla de enrutamiento:
+
+🔴***Proceso de reenvío:*** Al recibir una trama, el router extrae el paquete IP, busca la red de destino en su tabla y lo encapsula en una nueva trama para enviarlo por la interfaz correcta.<br>
+🔴***Próximo salto:*** El paquete puede ir directamente al host final o a otro router intermedio (utilizando direcciones MAC obtenidas mediante ARP).<br>
+🔴***Actualización de la tabla:*** Las rutas pueden ser ingresadas de forma manual (estáticas) por un administrador o de forma dinámica mediante protocolos de red.
+
+**4. Conceptos de LAN y Puerta de Enlace**<br>
+🔴***Definición de LAN:*** Redes bajo el mismo control administrativo que suelen usar Ethernet o Wi-Fi con altas velocidades.<br>
+🔴***Dominio de difusión:*** En una única LAN, todos los hosts pueden "verse" directamente mediante ARP. Al dividir la LAN, se reduce el impacto del tráfico, pero se añade complejidad y algo de latencia.<br>
+🔴***Gateway (Puerta de enlace):*** Es la dirección IP de la interfaz del router conectada a la red local. Es el punto de salida obligatorio para cualquier mensaje que vaya dirigido a una red externa.<br>
+
+<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/05b98fe1-43be-4f83-826a-5214619b1541" />
