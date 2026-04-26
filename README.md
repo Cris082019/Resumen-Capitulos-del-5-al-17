@@ -42,8 +42,6 @@ Las redes utilizan principalmente tres formas para conectar dispositivos, difere
 ***Fibra de vidrio o plástico (fibra óptica):*** Los datos viajan como pulsos de luz.<br>
 ***Transmisión inalámbrica:*** Los datos viajan mediante la modulación de ondas electromagnéticas
 
-<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/48886704-1ba0-45f6-9cf0-6f7e4129bb5d" />
-
 **2. Criterios para elegir un medio**<br>
 Para seleccionar el medio adecuado, se deben considerar cuatro factores:
 
@@ -51,3 +49,5 @@ La distancia máxima que puede alcanzar la señal.<br>
 El entorno de instalación.<br>
 La cantidad y velocidad de los datos.<br>
 El costo de la instalación.
+
+<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/48886704-1ba0-45f6-9cf0-6f7e4129bb5d" />
