@@ -2,13 +2,13 @@
 
 ## ***Capitulo 5***
 
-**Principios de Comunicación**
+***Principios de Comunicación***<br>
 La comunicación efectiva en red entre computadoras no es un proceso aislado, sino el resultado de la interacción armoniosa entre protocolos, estándares y modelos de referencia.
 
 **1. El Rol de los Protocolos**<br>
 Los protocolos son las reglas fundamentales que rigen cómo se envían, reciben e interpretan los datos. Para que dos hosts se comuniquen, deben acordar:
 
-*Formato y Estructura:* Cómo se organiza el mensaje.<br>
+***Formato y Estructura:*** Cómo se organiza el mensaje.<br>
 ***Codificación:*** La conversión de datos en patrones de luz, sonido o impulsos eléctricos según el medio físico.<br>
 ***Encapsulación:*** El proceso de agregar información de direccionamiento (origen y destino) en un encabezado para identificar a los involucrados.<br>
 ***Sincronización y Patrones:*** La velocidad de transmisión de los bits y el método de entrega (ya sea esperando una confirmación de recepción o simplemente transmitiendo los datos).
