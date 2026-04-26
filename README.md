@@ -119,4 +119,7 @@ Las direcciones IPv6 son largas (8 grupos de 4 dígitos hexadecimales), pero se 
 **3. DHCP en Entornos Domésticos y Pequeñas Empresas**<br>
 ***El Router Inalámbrico:*** Generalmente cumple una doble función: actúa como cliente DHCP para recibir una dirección de Internet del ISP y como servidor DHCP para asignar direcciones a los dispositivos de la casa.
 
-***Configuración Predeterminada:*** La mayoría de estos routers traen el servicio habilitado de fábrica, comúnmente usando la dirección 192.168.0.1 con una máscara 255.255.255.0, la cual sirve como puerta de enlace para toda la red local.
+***Configuración Predeterminada:*** La mayoría de estos routers traen el servicio habilitado de fábrica, comúnmente usando la dirección 192.168.0.1 con una máscara 255.255.255.0, la cual sirve como puerta de enlace para toda la red local.<br>
+<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/72c3685b-c045-47f7-b7a1-6af255cc0ea4" />
+
+
