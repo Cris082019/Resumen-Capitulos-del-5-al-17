@@ -162,10 +162,10 @@ Los conmutadores (switches) reenvían estos mensajes a todos sus puertos. El ár
 Si hay demasiados hosts en un mismo dominio, el tráfico puede ser excesivo y afectar el rendimiento. Para solucionar esto, se utilizan routers para dividir una red grande en varios dominios de difusión más pequeños.
 
 **4. Protocolo ARP (Address Resolution Protocol)**<br>
-Cuando un host conoce la IP de destino pero no su dirección MAC, utiliza el proceso ARP (en IPv4) que consta de tres pasos:<br>
-<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/e3450cf0-69d0-459f-962c-644975ea9789" />
-
+Cuando un host conoce la IP de destino pero no su dirección MAC, utiliza el proceso ARP (en IPv4) que consta de tres pasos:
 
 🟢***Solicitud:*** El emisor envía una trama de difusión con la IP que busca.<br>
 🟢***Respuesta:*** El host que tiene esa dirección IP responde enviando su dirección MAC al emisor.<br>
-🟢***Almacenamiento:*** El emisor guarda la relación entre esa IP y esa MAC en una tabla ARP para futuras comunicaciones.
+🟢***Almacenamiento:*** El emisor guarda la relación entre esa IP y esa MAC en una tabla ARP para futuras comunicaciones.<br>
+<img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/d72ee2c4-2b1d-413e-99ea-0070c0dc5c35" />
+
