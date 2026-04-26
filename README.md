@@ -25,10 +25,10 @@ La comunicación se organiza en "pilas de protocolos" divididas en capas indepen
 
 **Modelo OSI:** Es un modelo de referencia detallado de 7 capas que sirve para el diseño y la resolución de problemas:
 
-*Física:* Transmisión de bits por medios físicos.
-*Enlace de datos:* Intercambio de tramas entre dispositivos.
-*Red:* Direccionamiento y determinación de rutas.
-*Transporte:* Segmentación y reensamblaje de la información.
-*Sesión:* Gestión del diálogo entre aplicaciones.
-*Presentación:* Representación y formato de los datos.
+*Física:* Transmisión de bits por medios físicos.<br>
+*Enlace de datos:* Intercambio de tramas entre dispositivos.<br>
+*Red:* Direccionamiento y determinación de rutas.<br>
+*Transporte:* Segmentación y reensamblaje de la información.<br>
+*Sesión:* Gestión del diálogo entre aplicaciones.<br>
+*Presentación:* Representación y formato de los datos.<br>
 *Aplicación:* Interfaz para los protocolos de proceso a proceso.
