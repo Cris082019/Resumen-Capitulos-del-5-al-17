@@ -78,7 +78,23 @@ Identificación Lógica: Una dirección IPv4 es una dirección de red lógica qu
 🔵***Máscara de Subred:*** Se utiliza para identificar qué octetos corresponden a la red y cuáles al host. Por ejemplo, en la dirección 192.168.5.11 con máscara 255.255.255.0:<br>
 192.168.5 identifica la red.<br>
 .11 identifica al host específico.<br>
-🔵***Redes Lógicas:*** El direccionamiento IPv4 permite la existencia de múltiples redes lógicas dentro de una misma infraestructura física, siempre que las porciones de red sean diferentes.
-
+🔵***Redes Lógicas:*** El direccionamiento IPv4 permite la existencia de múltiples redes lógicas dentro de una misma infraestructura física, siempre que las porciones de red sean diferentes.<br>
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/c30bda84-7a78-4fad-8235-1d1ae3297ed2" />
 
+## **Capitulo 9**
+
+**1. Problemas con IPv4 y la Migración a IPv6**<br>
+IPv4 se quedó sin direcciones. IPv6 soluciona esto con 128 bits, permitiendo un espacio casi infinito (340 sextillones) y mejorando la autoconfiguración y seguridad (ICMPv6).
+
+**2. Métodos de Transición**<br>
+Como IPv4 e IPv6 deben convivir, se usan tres técnicas:
+
+***Dual Stack:*** El equipo habla ambos idiomas a la vez.<br>
+***Tunelización:*** Meter paquetes IPv6 dentro de paquetes IPv4.<br>
+***Traducción (NAT64):*** Traducir de un protocolo a otro para que se entiendan.
+
+**3. Formato y Reglas de Compresión**<br>
+Las direcciones IPv6 son largas (8 grupos de 4 dígitos hexadecimales), pero se pueden acortar con dos reglas:
+
+***Omitir ceros a la izquierda:*** 01ab → 1ab.<br>
+***Doble dos puntos (::):*** Reemplaza una secuencia de grupos de ceros. Ojo: Solo se puede usar una vez por dirección.
