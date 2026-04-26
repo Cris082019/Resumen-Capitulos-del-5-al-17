@@ -21,20 +21,20 @@ Para que dispositivos de distintos fabricantes puedan coexistir en una misma red
 **3. Modelos de Referencia y Capas**<br>
 La comunicación se organiza en "pilas de protocolos" divididas en capas independientes, donde cada nivel presta servicios al superior. Existen dos modelos principales:<br>
 
-Modelo TCP/IP: Es el modelo práctico utilizado en Internet. Se divide en cuatro capas: Aplicación (datos de usuario), Transporte (gestión de comunicación), Internet (ruta de datos) y Acceso a la red (hardware).
+**Modelo TCP/IP:** Es el modelo práctico utilizado en Internet. Se divide en cuatro capas: Aplicación (datos de usuario), Transporte (gestión de comunicación), Internet (ruta de datos) y Acceso a la red (hardware).
 
-Modelo OSI: Es un modelo de referencia detallado de 7 capas que sirve para el diseño y la resolución de problemas:
+**Modelo OSI:** Es un modelo de referencia detallado de 7 capas que sirve para el diseño y la resolución de problemas:
 
-Física: Transmisión de bits por medios físicos.
+*Física:* Transmisión de bits por medios físicos.
 
-Enlace de datos: Intercambio de tramas entre dispositivos.
+*Enlace de datos:* Intercambio de tramas entre dispositivos.
 
-Red: Direccionamiento y determinación de rutas.
+*Red:* Direccionamiento y determinación de rutas.
 
-Transporte: Segmentación y reensamblaje de la información.
+*Transporte:* Segmentación y reensamblaje de la información.
 
-Sesión: Gestión del diálogo entre aplicaciones.
+*Sesión:* Gestión del diálogo entre aplicaciones.
 
-Presentación: Representación y formato de los datos.
+*Presentación:* Representación y formato de los datos.
 
-Aplicación: Interfaz para los protocolos de proceso a proceso.
+*Aplicación:* Interfaz para los protocolos de proceso a proceso.
