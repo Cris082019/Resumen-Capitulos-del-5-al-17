@@ -38,6 +38,7 @@ La comunicación se organiza en "pilas de protocolos" divididas en capas indepen
 **1. Tipos de medios modernos**
 Las redes utilizan principalmente tres formas para conectar dispositivos, diferenciándose en cómo codifican los datos:
 
-***Hilos metálicos (cobre):* Los datos viajan como impulsos eléctricos.
-***Fibra de vidrio o plástico (fibra óptica):*** Los datos viajan como pulsos de luz.
+***Hilos metálicos (cobre):*** Los datos viajan como impulsos eléctricos.<br>
+***Fibra de vidrio o plástico (fibra óptica):*** Los datos viajan como pulsos de luz.<br>
 ***Transmisión inalámbrica:*** Los datos viajan mediante la modulación de ondas electromagnéticas
+
