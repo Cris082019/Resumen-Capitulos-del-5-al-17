@@ -25,10 +25,21 @@ La comunicación se organiza en "pilas de protocolos" divididas en capas indepen
 
 **Modelo OSI:** Es un modelo de referencia detallado de 7 capas que sirve para el diseño y la resolución de problemas:
 
-*Física:* Transmisión de bits por medios físicos.<br>
-*Enlace de datos:* Intercambio de tramas entre dispositivos.<br>
-*Red:* Direccionamiento y determinación de rutas.<br>
-*Transporte:* Segmentación y reensamblaje de la información.<br>
-*Sesión:* Gestión del diálogo entre aplicaciones.<br>
-*Presentación:* Representación y formato de los datos.<br>
-*Aplicación:* Interfaz para los protocolos de proceso a proceso.
+***Física:***Transmisión de bits por medios físicos.<br>
+***Enlace de datos:*** Intercambio de tramas entre dispositivos.<br>
+***Red:*** Direccionamiento y determinación de rutas.<br>
+***Transporte:*** Segmentación y reensamblaje de la información.<br>
+***Sesión:*** Gestión del diálogo entre aplicaciones.<br>
+***Presentación:*** Representación y formato de los datos.<br>
+***Aplicación:*** Interfaz para los protocolos de proceso a proceso.
+
+***Capitulo 6***
+
+1. Tipos de medios modernos
+Las redes utilizan principalmente tres formas para conectar dispositivos, diferenciándose en cómo codifican los datos:
+
+Hilos metálicos (cobre): Los datos viajan como impulsos eléctricos.
+
+Fibra de vidrio o plástico (fibra óptica): Los datos viajan como pulsos de luz.
+
+Transmisión inalámbrica: Los datos viajan mediante la modulación de ondas electromagnéticas
