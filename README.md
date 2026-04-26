@@ -100,4 +100,23 @@ Las direcciones IPv6 son largas (8 grupos de 4 dígitos hexadecimales), pero se 
 ***Doble dos puntos (::):*** Reemplaza una secuencia de grupos de ceros. Ojo: Solo se puede usar una vez por dirección.<br>
 <img width="545" height="367" alt="image" src="https://github.com/user-attachments/assets/96d99411-a0aa-48e1-8979-971a3291aba0" />
 
+## **Capitulo 10**
 
+**1. Direccionamiento Estático vs. Dinámico**<br>
+***Asignación Estática:*** El administrador de red configura manualmente la dirección IPv4, la máscara de subred y la puerta de enlace en cada dispositivo. Aunque ofrece un control total sobre los recursos, es un proceso lento en redes grandes y requiere llevar un registro riguroso para evitar duplicados.
+
+***Asignación Dinámica (DHCP):*** Es el método preferido para redes grandes. Automatiza la entrega de direcciones, reduce la carga de trabajo del personal técnico y elimina errores humanos de transcripción.
+
+**2. Funcionamiento de DHCP (Protocolo de Configuración Dinámica de Host)**<br>
+***Arrendamiento:*** Las direcciones no se entregan de forma permanente, sino que se "alquilan" por un tiempo determinado. Si un dispositivo se desconecta, su dirección regresa al "pool" (reserva) para ser reutilizada por otro.
+
+**El Proceso de Comunicación:**<br>
+***DHCP Discover:*** El cliente envía un mensaje de difusión (broadcast) buscando un servidor.<br>
+***DHCP Offer:*** El servidor responde ofreciendo una dirección IPv4 disponible.<br>
+***DHCP Request:*** El cliente solicita formalmente usar la dirección ofrecida.<br>
+***DHCP Acknowledgement:*** El servidor confirma la recepción y finaliza la configuración.
+
+**3. DHCP en Entornos Domésticos y Pequeñas Empresas**<br>
+***El Router Inalámbrico:*** Generalmente cumple una doble función: actúa como cliente DHCP para recibir una dirección de Internet del ISP y como servidor DHCP para asignar direcciones a los dispositivos de la casa.
+
+***Configuración Predeterminada:*** La mayoría de estos routers traen el servicio habilitado de fábrica, comúnmente usando la dirección 192.168.0.1 con una máscara 255.255.255.0, la cual sirve como puerta de enlace para toda la red local.
